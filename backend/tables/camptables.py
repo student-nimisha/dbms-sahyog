@@ -27,6 +27,7 @@ def create_camp_table():
             FundReq VARCHAR(50),
             FundAvail VARCHAR(50),
             Volunteersroutedbysahyog INT
+           foreign key (volunteerId) references Volunteers(volunteerId)
             
         );
     ''')
